@@ -1,13 +1,13 @@
 // @desc    Get all locations
 // @route   GET /api/v1/locations
-// @access  Public
+// @access  Private
 exports.getLocations = (req, res, next) => {
   res.status(200).json({ sucess: true, msg: "Show all locations" });
 };
 
 // @desc    Get single locations
 // @route   GET /api/v1/locations/:id
-// @access  Public
+// @access  Private
 exports.getLocation = (req, res, next) => {
   res
     .status(200)
