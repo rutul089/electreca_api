@@ -13,6 +13,9 @@ const locations = require("./routes/locations");
 
 const app = express();
 
+// Body parser
+app.use(express.json());
+
 // Dev loggint middleware
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
